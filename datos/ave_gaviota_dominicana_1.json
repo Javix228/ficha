@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Gaviota Dominicana",
+  "nombre_cientifico": "Larus dominicanus",
+  "imagen": "fotos/ave_gaviota_dominicana_1.jpg",
+  "audio": "audios/ave_gaviota_dominicana_1.mp3",
+  "lugar": "Laguna Galletué, Lonquimay",
+  "fecha": "26/01/2026",
+  "exif": {
+    "velocidad": "1/3200 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 1600",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Ave grande de cuerpo blanco y alas negras. Destaca su grueso pico amarillo con una mancha roja en la mandíbula inferior. Habita costas, puertos y lagos de todo el hemisferio sur. Dato curioso: es un depredador muy oportunista; en la Patagonia ha aprendido a alimentarse picoteando la piel y grasa de ballenas francas vivas"
+}

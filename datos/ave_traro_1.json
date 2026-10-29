@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Traro o Carancho",
+  "nombre_cientifico": "Caracara plancus",
+  "imagen": "fotos/ave_traro_1.jpg",
+  "audio": "audios/ave_traro_1.mp3",
+  "lugar": "Parque nacional Conguillío",
+  "fecha": "21/05/2026",
+  "exif": {
+    "velocidad": "1/200 s",
+    "apertura": "f/5.0",
+    "iso": "ISO 1600",
+    "focal": "165 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": ""
+}

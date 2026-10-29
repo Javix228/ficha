@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Cisne de cuello negro",
+  "nombre_cientifico": "Cygnus melancoryphus",
+  "imagen": "fotos/ave_cisne_cuellonegro_1.jpg",
+  "audio": "audios/ave_cisne_cuellonegro_1.mp3",
+  "lugar": "Isla de las almas navegantes, Chiloé",
+  "fecha": "10/04/2022",
+  "exif": {
+    "velocidad": "1/1600 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Su plumaje es blanco con cuello y cabeza negros, resaltando una carúncula roja en el pico y una línea ocular blanca. Habita lagunas, humedales y costas de Sudamérica. Dato curioso: es de los pocos cisnes donde ambos padres acostumbran a transportar frecuentemente a sus crías sobre el dorso mientras nadan para brindarles protección"
+}

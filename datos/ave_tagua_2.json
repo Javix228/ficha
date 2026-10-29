@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Tagua Común",
+  "nombre_cientifico": "Fulica armillata",
+  "imagen": "fotos/ave_tagua_2.jpg",
+  "audio": "audios/ave_tagua_2.mp3",
+  "lugar": "Laguna Galletué, Lonquimay",
+  "fecha": "26/01/2026",
+  "exif": {
+    "velocidad": "1/2500 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 800",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Ave acuática de plumaje negro grisáceo. Se distingue por su pico y escudete amarillo con una mancha roja entre ambos. Habita lagos, lagunas y humedales con abundante vegetación en Sudamérica. Dato curioso: no tiene patas palmeadas; posee dedos lobulados que se expanden al nadar y se pliegan al caminar sobre la vegetación flotante."
+}

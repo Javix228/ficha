@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Golondrina Chilena",
+  "nombre_cientifico": "Tachycineta meyeni",
+  "imagen": "fotos/ave_golondrina_1.jpg",
+  "audio": "audios/ave_golondrina_1.mp3",
+  "lugar": "Curacautín, Chile",
+  "fecha": "2/10/2022",
+  "exif": {
+    "velocidad": "1/1250 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Es un ave pequeña con el dorso azul oscuro brillante, partes inferiores blancas y una distintiva rabadilla blanca. Habita áreas abiertas, praderas y zonas urbanas del sur de Sudamérica. Dato curioso: es una excelente voladora que suele aprovechar estructuras humanas, como aleros de casas, para anidar, tapizando el interior de sus nidos con plumas suaves"
+}

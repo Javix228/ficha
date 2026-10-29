@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Cóndor Andino",
+  "nombre_cientifico": "Vultur gryphus",
+  "imagen": "fotos/ave_condor_1.jpg",
+  "audio": "audios/ave_condor_1.mp3",
+  "lugar": "Volcán Lonquimay, comuna de Curacautín",
+  "fecha": "28/12/2025",
+  "exif": {
+    "velocidad": "1/1600 s",
+    "apertura": "f/4.8",
+    "iso": "ISO 800",
+    "focal": "140 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Carroñero gigante de plumaje negro, collar blanco y cabeza calva rojiza. Habita las alturas de la cordillera de los Andes y áreas costeras adyacentes. Dato curioso: carece de siringe, por lo que es incapaz de cantar; se comunica exclusivamente mediante siseos, jadeos y chasquidos con el pico"
+}

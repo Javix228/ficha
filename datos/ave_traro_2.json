@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Traro o Carancho",
+  "nombre_cientifico": "Caracara plancus",
+  "imagen": "fotos/ave_traro_2.jpg",
+  "audio": "audios/ave_traro_2.mp3",
+  "lugar": "Parque nacional Conguillío",
+  "fecha": "22/01/2025",
+  "exif": {
+    "velocidad": "1/1000 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Es una rapaz grande y oportunista. Presenta plumaje pardo oscuro, pecho barrado de blanco y negro, y piel desnuda anaranjada en el rostro. Habita zonas abiertas, praderas y campos agrícolas. Dato curioso: a diferencia de la mayoría de los halcones, pasa gran parte de su tiempo caminando por el suelo buscando insectos y carroña."
+}
