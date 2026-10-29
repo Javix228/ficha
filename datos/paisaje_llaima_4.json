@@ -1,15 +1,15 @@
 {
   "tipo": "paisaje",
-  "titulo": "Volcán Llaima y Bosque de Araucarias",
+  "titulo": "Mirador Volcán Llaima",
   "imagen": "fotos/paisaje_llaima_4.jpg",
-  "lugar": "Curacautín, Región de La Araucanía",
-  "fecha": "Octubre 2026",
+  "lugar": "Parque nacional Conguillío, sendero sierra nevada",
+  "fecha": "21/05/2026",
   "exif": {
-    "velocidad": "1/1000 s",
-    "apertura": "f/8.0",
+    "velocidad": "1/160 s",
+    "apertura": "f/10.0",
     "iso": "ISO 100",
-    "focal": "85 mm",
-    "equipo": "Nikon DSLR"
+    "focal": "70 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
   },
-  "descripcion": "Vista panorámica del Volcán Llaima rodeado de araucarias milenarias en la cordillera de La Araucanía Andina."
+  "descripcion": "Vista panorámica del Volcán Llaima rodeado de araucarias milenarias en la cordillera de La Araucanía Andina. Vista especial desde el mirador 'Sierra Nevada' al término del sendero."
 }
