@@ -165,6 +165,7 @@
       const tituloDescripcion = document.getElementById("titulo-descripcion");
 
       if (ficha.tipo === "ave") {
+        badgeTipo.textContent = "Fauna Silvestre";
         tituloDescripcion.textContent = "Sobre esta especie";
         if (ficha.nombre_cientifico) {
           txtCientifico.textContent = ficha.nombre_cientifico;
@@ -172,7 +173,8 @@
         }
         configurarAudioAve(ficha.audio);
       } else {
-        tituloDescripcion.textContent = "Sobre este lugar";
+        badgeTipo.textContent = "Paisaje & Montaña";
+        tituloDescripcion.textContent = "Sobre este lugar y su historia";
         txtCientifico.classList.add("oculto");
         document.getElementById("bloque-audio").classList.add("oculto");
       }
