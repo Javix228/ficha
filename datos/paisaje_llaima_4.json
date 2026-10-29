@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Volcán Llaima y Bosque de Araucarias",
+  "imagen": "fotos/paisaje_llaima_4.jpg",
+  "lugar": "Curacautín, Región de La Araucanía",
+  "fecha": "Octubre 2026",
+  "exif": {
+    "velocidad": "1/1000 s",
+    "apertura": "f/8.0",
+    "iso": "ISO 100",
+    "focal": "85 mm",
+    "equipo": "Nikon DSLR"
+  },
+  "descripcion": "Vista panorámica del Volcán Llaima rodeado de araucarias milenarias en la cordillera de La Araucanía Andina."
+}
