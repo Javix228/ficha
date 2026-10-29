@@ -160,24 +160,21 @@
         : "";
 
       // Diferenciar automáticamente entre AVE y PAISAJE
-      const txtCientifico = document.getElementById("txt-cientifico");
-      const badgeTipo = document.getElementById("badge-tipo");
-      const tituloDescripcion = document.getElementById("titulo-descripcion");
+    const txtCientifico = document.getElementById("txt-cientifico");
+    const tituloDescripcion = document.getElementById("titulo-descripcion");
 
-      if (ficha.tipo === "ave") {
-        badgeTipo.textContent = "Fauna Silvestre";
-        tituloDescripcion.textContent = "Sobre esta especie";
-        if (ficha.nombre_cientifico) {
-          txtCientifico.textContent = ficha.nombre_cientifico;
-          txtCientifico.classList.remove("oculto");
-        }
-        configurarAudioAve(ficha.audio);
-      } else {
-        badgeTipo.textContent = "Paisaje & Montaña";
-        tituloDescripcion.textContent = "Sobre este lugar y su historia";
-        txtCientifico.classList.add("oculto");
-        document.getElementById("bloque-audio").classList.add("oculto");
+    if (ficha.tipo === "ave") {
+      tituloDescripcion.textContent = "Sobre esta especie";
+      if (ficha.nombre_cientifico) {
+        txtCientifico.textContent = ficha.nombre_cientifico;
+        txtCientifico.classList.remove("oculto");
       }
+      configurarAudioAve(ficha.audio);
+    } else {
+      tituloDescripcion.textContent = "Sobre este lugar";
+      txtCientifico.classList.add("oculto");
+      document.getElementById("bloque-audio").classList.add("oculto");
+    }
       
       await renderizarFotoProtegida(ficha.imagen);
       vistaCarga.classList.add("oculto");
