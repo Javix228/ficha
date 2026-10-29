@@ -1,9 +1,9 @@
 (function () {
   "use strict";
 
-  // 1. PROTECCIÓN DE TECLADO Y EVENTOS (Dificultar guardado e inspección casual)
+  //PROTECCIÓN DE TECLADO Y EVENTOS 
   document.addEventListener("keydown", function (e) {
-    // Bloquear Ctrl+S (Guardar), Ctrl+U (Ver código fuente), Ctrl+P (Imprimir), F12
+    //Bloquear Ctrl+S (Guardar), Ctrl+U (Ver código fuente), Ctrl+P (Imprimir), F12
     if (
       (e.ctrlKey &&
         (e.key === "s" ||
@@ -19,7 +19,7 @@
     }
   });
 
-  // 2. VALIDACIÓN ESTRICTA DEL PARÁMETRO ?id= DEL QR
+  //VALIDACIÓN DEL PARÁMETRO ?id= DEL QR
   const params = new URLSearchParams(window.location.search);
   const idRaw = params.get("id");
 
@@ -33,7 +33,6 @@
     vistaBloqueo.classList.remove("oculto");
   }
 
-  // Solo permitir caracteres alfanuméricos, guiones y guion bajo (evita inyecciones o rutas relativas)
   const regexIdSeguro = /^[a-z0-9_-]{3,60}$/i;
   if (!idRaw || !regexIdSeguro.test(idRaw)) {
     mostrarBloqueo();
@@ -42,7 +41,7 @@
 
   const idLimpio = idRaw.toLowerCase();
 
-  // 3. DIBUJAR LA FOTOGRAFÍA EN EL <CANVAS> CON MARCA DE AGUA SUTIL (Sin exponer etiqueta <img>)
+  //DIBUJAR LA FOTOGRAFÍA EN EL <CANVAS> CON MARCA DE AGUA SUTIL
   function renderizarFotoProtegida(urlImagen) {
     return new Promise((resolve, reject) => {
       const img = new Image();
@@ -52,13 +51,10 @@
         const canvas = document.getElementById("lienzo-foto");
         const ctx = canvas.getContext("2d");
 
-        // Mantener la resolución y formato original completo (4:3, 16:9, 4:5, etc.)
         canvas.width = img.naturalWidth;
         canvas.height = img.naturalHeight;
 
         ctx.drawImage(img, 0, 0);
-
-        // Marca de agua sutil integrada en los píxeles del canvas (esquina inferior derecha)
         const fontSize = Math.max(16, Math.round(canvas.width * 0.018));
         ctx.font = `600 ${fontSize}px system-ui, sans-serif`;
         const textoMarca = "© @javixcortesph_";
@@ -91,7 +87,7 @@
     });
   }
 
-  // 4. CONFIGURAR EL REPRODUCTOR DE SONIDO (Solo cuando es Ave)
+  //CONFIGURAR EL REPRODUCTOR DE SONIDO
   function configurarAudioAve(urlAudio) {
     const bloqueAudio = document.getElementById("bloque-audio");
     const btnAudio = document.getElementById("btn-audio");
@@ -135,7 +131,7 @@
     });
   }
 
-  // 5. CARGAR ÚNICAMENTE EL ARCHIVO JSON DE ESA FOTO (Aislado del resto del catálogo)
+  //CARGAR ÚNICAMENTE EL ARCHIVO JSON DE ESA FOTO DE FORMA AISLADA
   fetch(`datos/${idLimpio}.json`, { cache: "no-store" })
     .then((respuesta) => {
       if (!respuesta.ok) {
@@ -144,7 +140,6 @@
       return respuesta.json();
     })
     .then(async (ficha) => {
-      // Poblar textos comunes
       document.getElementById("txt-titulo").textContent =
         ficha.titulo || "Sin título";
       document.getElementById("txt-lugar").textContent =
@@ -153,7 +148,6 @@
       document.getElementById("txt-descripcion").textContent =
         ficha.descripcion || "";
 
-      // Poblar parámetros EXIF
       const exif = ficha.exif || {};
       document.getElementById("exif-velocidad").textContent =
         exif.velocidad || "-";
@@ -184,10 +178,8 @@
         txtCientifico.classList.add("oculto");
         document.getElementById("bloque-audio").classList.add("oculto");
       }
-
-      // Renderizar la foto en el Canvas antes de mostrar la tarjeta
+      
       await renderizarFotoProtegida(ficha.imagen);
-
       vistaCarga.classList.add("oculto");
       vistaFicha.classList.remove("oculto");
     })

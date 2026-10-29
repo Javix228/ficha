@@ -11,7 +11,6 @@
 
 * {
   box-sizing: border-box;
-  /* Bloqueo de selección de texto y menú táctil en iOS/Android */
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
@@ -33,7 +32,6 @@ body {
   display: none !important;
 }
 
-/* PANTALLAS DE CARGA Y BLOQUEO */
 .estado-pantalla {
   min-height: 100vh;
   width: 100%;
@@ -73,7 +71,6 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* CONTENEDOR PRINCIPAL DE LA FICHA */
 .contenedor-ficha {
   width: 100%;
   max-width: 580px;
@@ -108,7 +105,6 @@ body {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
 }
 
-/* VISOR DE FOTOGRAFÍA EN FORMATO COMPLETO Y PROTEGIDO */
 .visor-protegido {
   position: relative;
   width: 100%;
@@ -151,7 +147,6 @@ body {
   backdrop-filter: blur(6px);
 }
 
-/* CUERPO DE LA FICHA */
 .cuerpo-ficha {
   padding: 24px 22px;
 }
@@ -170,7 +165,6 @@ body {
   color: var(--verde-acento);
 }
 
-/* REPRODUCTOR DE SONIDO (AVES) */
 .contenedor-audio {
   margin-top: 18px;
 }
@@ -222,7 +216,6 @@ body {
   color: var(--texto-secundario);
 }
 
-/* Animación de ondas cuando suena el ave */
 .ecualizador {
   display: flex;
   align-items: flex-end;
@@ -246,7 +239,6 @@ body {
   50% { height: 18px; }
 }
 
-/* UBICACIÓN Y FECHA */
 .franja-ubicacion {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -271,7 +263,6 @@ body {
   color: var(--texto-principal);
 }
 
-/* SECCIÓN EXIF */
 .seccion-exif, .seccion-descripcion {
   margin-top: 22px;
 }
@@ -317,7 +308,6 @@ body {
   text-align: right;
 }
 
-/* DESCRIPCIÓN / HISTORIA */
 .parrafo-historia {
   margin: 0;
   font-size: 0.94rem;
@@ -329,7 +319,6 @@ body {
   border-left: 3px solid var(--verde-acento);
 }
 
-/* PIE DE PÁGINA */
 .pie-ficha {
   margin-top: 26px;
   padding-top: 20px;
@@ -362,7 +351,6 @@ body {
   font-size: 0.92rem;
 }
 
-/* Responsivo para celulares pequeños */
 @media (max-width: 420px) {
   .grilla-exif {
     grid-template-columns: repeat(2, 1fr);
@@ -372,7 +360,6 @@ body {
   }
 }
 
-/* Bloquear que alguien imprima la página como PDF para robar la foto */
 @media print {
   body { display: none !important; }
 }
