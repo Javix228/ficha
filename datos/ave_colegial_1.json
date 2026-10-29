@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Colegial Austral",
+  "nombre_cientifico": "Lessonia rufa",
+  "imagen": "fotos/ave_colegial_1.jpg",
+  "audio": "audios/ave_colegial_1.mp3",
+  "lugar": "Curacautín, Región de La Araucanía",
+  "fecha": "Octubre 2026",
+  "exif": {
+    "velocidad": "1/1600 s",
+    "apertura": "f/5.6",
+    "iso": "ISO 400",
+    "focal": "400 mm",
+    "equipo": "Nikon DSLR • Teleobjetivo"
+  },
+  "descripcion": "Pequeña ave paseriforme muy activa que habita cerca de humedales, riberas de ríos y terrenos abiertos del sur de Chile. El macho destaca por su plumaje negro intenso con un inconfundible dorso color canela o herrumbre."
+}

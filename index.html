@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <title>Ficha de Captura | @javixcortesph_</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+  <main id="vista-bloqueo" class="estado-pantalla oculto">
+    <div class="tarjeta-bloqueo">
+      <div class="icono-Candado">🔒</div>
+      <h1>Acceso Exclusivo por QR</h1>
+      <p>Esta plataforma contiene el archivo fotográfico autenticado de <strong>@javixcortesph_</strong>.</p>
+      <p class="texto-secundario">Para visualizar una captura original, escanea el código QR impreso al reverso de tu sticker físico.</p>
+      <a href="https://instagram.com/javixcortesph_" target="_blank" rel="noopener" class="btn-primario">
+        Ir a @javixcortesph_
+      </a>
+    </div>
+  </main>
+
+  <div id="vista-carga" class="estado-pantalla">
+    <div class="spinner"></div>
+    <p>Verificando código de captura...</p>
+  </div>
+  <main id="vista-ficha" class="contenedor-ficha oculto">
+    
+    <header class="cabecera-marca">
+      <span class="sello-autenticidad">✓ Captura Original Autenticada</span>
+      <span class="autor-header">@javixcortesph_</span>
+    </header>
+
+    <article class="tarjeta-principal">
+      
+      <!-- VISOR PROTEGIDO EN FORMATO COMPLETO (Renderizado en Canvas + Escudo Transparente) -->
+      <section class="visor-protegido" id="contenedor-visor">
+        <canvas id="lienzo-foto"></canvas>
+        <!-- Capa escudo invisible que intercepta toques largos en móviles -->
+        <div class="escudo-anti-descarga" id="escudo-foto"></div>
+        <div class="etiqueta-formato" id="badge-tipo">Fotografía</div>
+      </section>
+
+      <!-- INFORMACIÓN Y METADATOS -->
+      <div class="cuerpo-ficha">
+        
+        <!-- Encabezado dinámico -->
+        <div class="encabezado-titulo">
+          <h1 id="txt-titulo">-</h1>
+          <!-- Solo se muestra si es AVE -->
+          <p id="txt-cientifico" class="nombre-cientifico oculto">-</p>
+        </div>
+
+        <!-- REPRODUCTOR DE CANTO (Exclusivo para Aves) -->
+        <div id="bloque-audio" class="contenedor-audio oculto">
+          <button id="btn-audio" class="boton-sonido" type="button">
+            <span id="icono-audio" class="icono-play">▶</span>
+            <div class="texto-boton-audio">
+              <strong id="estado-audio">Escuchar canto del ave</strong>
+              <span>Grabación de campo / Referencia acústica</span>
+            </div>
+            <div id="ondas-audio" class="ecualizador oculto">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </button>
+          <audio id="reproductor-mp3" preload="none"></audio>
+        </div>
+
+        <!-- FECHA Y LUGAR DE CAPTURA -->
+        <div class="franja-ubicacion">
+          <div class="item-ubicacion">
+            <span class="etiqueta-mini">📍 Lugar de captura</span>
+            <strong id="txt-lugar">-</strong>
+          </div>
+          <div class="item-ubicacion">
+            <span class="etiqueta-mini">📅 Fecha de registro</span>
+            <strong id="txt-fecha">-</strong>
+          </div>
+        </div>
+
+        <!-- PARÁMETROS TÉCNICOS DE LA CÁMARA (EXIF) -->
+        <section class="seccion-exif">
+          <h2 class="titulo-seccion">Parámetros Técnicos de Captura</h2>
+          <div class="grilla-exif">
+            <div class="caja-exif">
+              <span>Velocidad</span>
+              <strong id="exif-velocidad">-</strong>
+            </div>
+            <div class="caja-exif">
+              <span>Apertura</span>
+              <strong id="exif-apertura">-</strong>
+            </div>
+            <div class="caja-exif">
+              <span>Sensibilidad</span>
+              <strong id="exif-iso">-</strong>
+            </div>
+            <div class="caja-exif">
+              <span>Distancia Focal</span>
+              <strong id="exif-focal">-</strong>
+            </div>
+          </div>
+          <div class="equipo-info" id="exif-equipo">Cámara: -</div>
+        </section>
+
+        <!-- DESCRIPCIÓN BREVE (Ave o Historia del Paisaje) -->
+        <section class="seccion-descripcion">
+          <h2 class="titulo-seccion" id="titulo-descripcion">Sobre esta captura</h2>
+          <p id="txt-descripcion" class="parrafo-historia">-</p>
+        </section>
+
+        <!-- PIE DE AUTORÍA (Sin botones a otras fotos) -->
+        <footer class="pie-ficha">
+          <div class="firma-autor">
+            <p>Fotografía y edición por <strong>Javier Cortés Jara</strong></p>
+            <small>Curacautín • Región de La Araucanía, Chile</small>
+          </div>
+          <a href="https://instagram.com/javixcortesph_" target="_blank" rel="noopener" class="btn-instagram">
+            Seguir en @javixcortesph_
+          </a>
+        </footer>
+
+      </div>
+    </article>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
