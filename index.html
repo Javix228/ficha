@@ -7,7 +7,9 @@
   <title>Ficha de captura | @javixcortesph_</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+
   <main id="vista-bloqueo" class="estado-pantalla oculto">
     <div class="tarjeta-bloqueo">
       <div class="icono-Candado">🔒</div>
@@ -24,13 +26,15 @@
     <div class="spinner"></div>
     <p>Verificando código de captura...</p>
   </div>
+
   <main id="vista-ficha" class="contenedor-ficha oculto">
-    
+
     <header class="cabecera-marca">
       <span class="autor-header">@javixcortesph_</span>
     </header>
 
     <article class="tarjeta-principal">
+
       <section class="visor-protegido" id="contenedor-visor">
         <canvas id="lienzo-foto"></canvas>
         <div class="escudo-anti-descarga" id="escudo-foto"></div>
@@ -38,89 +42,123 @@
 
       <!-- INFORMACIÓN Y METADATOS -->
       <div class="cuerpo-ficha">
+
         <div class="encabezado-titulo">
           <h1 id="txt-titulo">-</h1>
           <p id="txt-cientifico" class="nombre-cientifico oculto">-</p>
         </div>
 
         <!-- REPRODUCTOR DE CANTO -->
-<div id="bloque-audio" class="contenedor-audio oculto">
-  <button
-    id="btn-audio"
-    class="boton-sonido"
-    type="button"
-    aria-label="Reproducir canto del ave"
-  >
-    <span id="icono-audio" class="icono-play" aria-hidden="true">▶</span>
+        <div id="bloque-audio" class="contenedor-audio oculto">
 
-    <div class="texto-boton-audio">
-      <strong id="estado-audio">Escuchar canto del ave</strong>
-    </div>
+          <button
+            id="btn-audio"
+            class="boton-sonido"
+            type="button"
+            aria-label="Reproducir canto del ave"
+          >
 
-    <div
-      id="ondas-audio"
-      class="ecualizador oculto"
-      aria-hidden="true"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </button>
+            <span
+              id="icono-audio"
+              class="icono-play"
+              aria-hidden="true"
+            >▶</span>
 
-  <audio id="reproductor-mp3" preload="none"></audio>
-</div>
+            <span class="texto-boton-audio">
+              <strong id="estado-audio">Escuchar canto del ave</strong>
+            </span>
+
+            <span
+              id="ondas-audio"
+              class="ecualizador oculto"
+              aria-hidden="true"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+          </button>
+
+          <audio id="reproductor-mp3" preload="none"></audio>
+
+        </div>
+
         <!-- FECHA Y LUGAR DE CAPTURA -->
         <div class="franja-ubicacion">
+
           <div class="item-ubicacion">
             <span class="etiqueta-mini">📍 Lugar de captura</span>
             <strong id="txt-lugar">-</strong>
           </div>
+
           <div class="item-ubicacion">
             <span class="etiqueta-mini">📅 Fecha de captura</span>
             <strong id="txt-fecha">-</strong>
           </div>
+
         </div>
 
         <!-- PARÁMETROS TÉCNICOS DE LA CÁMARA -->
         <section class="seccion-exif">
+
           <h2 class="titulo-seccion">Parámetros Técnicos</h2>
+
           <div class="grilla-exif">
+
             <div class="caja-exif">
               <span>Velocidad</span>
               <strong id="exif-velocidad">-</strong>
             </div>
+
             <div class="caja-exif">
               <span>Apertura</span>
               <strong id="exif-apertura">-</strong>
             </div>
+
             <div class="caja-exif">
               <span>Sensibilidad</span>
               <strong id="exif-iso">-</strong>
             </div>
+
             <div class="caja-exif">
               <span>Distancia Focal</span>
               <strong id="exif-focal">-</strong>
             </div>
+
           </div>
+
           <div class="equipo-info" id="exif-equipo">Cámara: -</div>
+
         </section>
 
         <!-- DESCRIPCIÓN BREVE -->
         <section class="seccion-descripcion">
+
           <h2 class="titulo-seccion" id="titulo-descripcion">Sobre esta captura</h2>
+
           <p id="txt-descripcion" class="parrafo-historia">-</p>
+
         </section>
 
+        <!-- PIE DE FICHA -->
         <footer class="pie-ficha">
+
           <div class="firma-autor">
             <p>Fotografía y edición por <strong>Javier Alfonso Cortés Jara</strong></p>
             <small>Curacautín • Región de La Araucanía, Chile.</small>
           </div>
-          <a href="https://instagram.com/javixcortesph_" target="_blank" rel="noopener" class="btn-instagram">
+
+          <a
+            href="https://instagram.com/javixcortesph_"
+            target="_blank"
+            rel="noopener"
+            class="btn-instagram"
+          >
             ¡Sígueme en @javixcortesph_!
           </a>
+
         </footer>
 
       </div>
@@ -128,5 +166,6 @@
   </main>
 
   <script src="app.js"></script>
+
 </body>
 </html>
