@@ -44,19 +44,33 @@
         </div>
 
         <!-- REPRODUCTOR DE CANTO -->
-        <div id="bloque-audio" class="contenedor-audio oculto">
-          <button id="btn-audio" class="boton-sonido" type="button">
-            <span id="icono-audio" class="icono-play">▶</span>
-            <div class="texto-boton-audio">
-              <strong id="estado-audio">Escuchar canto del ave</strong>
-            </div>
-            <div id="ondas-audio" class="ecualizador oculto">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </button>
-          <audio id="reproductor-mp3" preload="none"></audio>
-        </div>
+<div id="bloque-audio" class="contenedor-audio oculto">
+  <button
+    id="btn-audio"
+    class="boton-sonido"
+    type="button"
+    aria-label="Reproducir canto del ave"
+  >
+    <span id="icono-audio" class="icono-play" aria-hidden="true">▶</span>
 
+    <div class="texto-boton-audio">
+      <strong id="estado-audio">Escuchar canto del ave</strong>
+    </div>
+
+    <div
+      id="ondas-audio"
+      class="ecualizador oculto"
+      aria-hidden="true"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <audio id="reproductor-mp3" preload="none"></audio>
+</div>
         <!-- FECHA Y LUGAR DE CAPTURA -->
         <div class="franja-ubicacion">
           <div class="item-ubicacion">

@@ -89,47 +89,62 @@
 
   //CONFIGURAR EL REPRODUCTOR DE SONIDO
   function configurarAudioAve(urlAudio) {
-    const bloqueAudio = document.getElementById("bloque-audio");
-    const btnAudio = document.getElementById("btn-audio");
-    const reproductor = document.getElementById("reproductor-mp3");
-    const iconoAudio = document.getElementById("icono-audio");
-    const estadoAudio = document.getElementById("estado-audio");
-    const ondas = document.getElementById("ondas-audio");
+  const bloqueAudio = document.getElementById("bloque-audio");
+  const btnAudio = document.getElementById("btn-audio");
+  const reproductor = document.getElementById("reproductor-mp3");
+  const iconoAudio = document.getElementById("icono-audio");
+  const estadoAudio = document.getElementById("estado-audio");
+  const ondas = document.getElementById("ondas-audio");
 
-    if (!urlAudio) {
-      bloqueAudio.classList.add("oculto");
-      return;
-    }
-
-    reproductor.src = urlAudio;
-    bloqueAudio.classList.remove("oculto");
-
-    btnAudio.addEventListener("click", function () {
-      if (reproductor.paused) {
-        reproductor
-          .play()
-          .then(() => {
-            iconoAudio.textContent = "⏸";
-            estadoAudio.textContent = "Reproduciendo canto...";
-            ondas.classList.remove("oculto");
-          })
-          .catch(() => {
-            estadoAudio.textContent = "Audio no disponible aún";
-          });
-      } else {
-        reproductor.pause();
-        iconoAudio.textContent = "▶";
-        estadoAudio.textContent = "Escuchar canto del ave";
-        ondas.classList.add("oculto");
-      }
-    });
-
-    reproductor.addEventListener("ended", function () {
-      iconoAudio.textContent = "▶";
-      estadoAudio.textContent = "Escuchar canto nuevamente";
-      ondas.classList.add("oculto");
-    });
+  if (!urlAudio) {
+    bloqueAudio.classList.add("oculto");
+    return;
   }
+
+  reproductor.src = urlAudio;
+  bloqueAudio.classList.remove("oculto");
+
+  function actualizarEstado(reproduciendo) {
+    iconoAudio.textContent = reproduciendo ? "Ⅱ" : "▶";
+
+    estadoAudio.textContent = reproduciendo
+      ? "Reproduciendo canto..."
+      : "Escuchar canto del ave";
+
+    ondas.classList.toggle("oculto", !reproduciendo);
+
+    btnAudio.setAttribute(
+      "aria-label",
+      reproduciendo ? "Pausar canto del ave" : "Reproducir canto del ave"
+    );
+  }
+
+  btnAudio.addEventListener("click", function () {
+    if (reproductor.paused) {
+      reproductor.play().catch(() => {
+        estadoAudio.textContent = "Audio no disponible";
+        iconoAudio.textContent = "▶";
+        ondas.classList.add("oculto");
+      });
+    } else {
+      reproductor.pause();
+    }
+  });
+
+  reproductor.addEventListener("play", function () {
+    actualizarEstado(true);
+  });
+
+  reproductor.addEventListener("pause", function () {
+    actualizarEstado(false);
+  });
+
+  reproductor.addEventListener("ended", function () {
+    actualizarEstado(false);
+  });
+
+  actualizarEstado(false);
+}
 
   //CARGAR ÚNICAMENTE EL ARCHIVO JSON DE ESA FOTO DE FORMA AISLADA
   fetch(`datos/${idLimpio}.json`, { cache: "no-store" })
