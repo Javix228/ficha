@@ -96,12 +96,16 @@
     const estadoAudio = document.getElementById("estado-audio");
     const ondas = document.getElementById("ondas-audio");
 
+    const SVG_PLAY = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-left:2px;"><path d="M8 5v14l11-7z"/></svg>';
+    const SVG_PAUSE = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+
     if (!urlAudio) {
       bloqueAudio.classList.add("oculto");
       return;
     }
 
     reproductor.src = urlAudio;
+    iconoAudio.innerHTML = SVG_PLAY;
     bloqueAudio.classList.remove("oculto");
 
     btnAudio.addEventListener("click", function () {
@@ -109,7 +113,7 @@
         reproductor
           .play()
           .then(() => {
-            iconoAudio.textContent = "⏸";
+            iconoAudio.innerHTML = SVG_PAUSE;
             estadoAudio.textContent = "Reproduciendo canto...";
             ondas.classList.remove("oculto");
           })
@@ -118,15 +122,15 @@
           });
       } else {
         reproductor.pause();
-        iconoAudio.textContent = "▶";
+        iconoAudio.innerHTML = SVG_PLAY;
         estadoAudio.textContent = "Escuchar canto del ave";
         ondas.classList.add("oculto");
       }
     });
 
     reproductor.addEventListener("ended", function () {
-      iconoAudio.textContent = "▶";
-      estadoAudio.textContent = "Escuchar canto nuevamente";
+      iconoAudio.innerHTML = SVG_PLAY;
+      estadoAudio.textContent = "Escuchar canto del ave";
       ondas.classList.add("oculto");
     });
   }
