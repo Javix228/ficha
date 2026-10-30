@@ -7,6 +7,8 @@
   --texto-principal: #f0f4f1;
   --texto-secundario: #96a399;
   --borde-color: #242d26;
+  --fuente-titulos: "Fraunces", Georgia, serif;
+  --fuente-cuerpo: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -21,7 +23,8 @@ body {
   padding: 0;
   background-color: var(--bg-fondo);
   color: var(--texto-principal);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--fuente-cuerpo);
+  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -50,6 +53,12 @@ body {
   border-radius: 18px;
   padding: 32px 24px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.tarjeta-bloqueo h1 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .icono-Candado {
@@ -83,7 +92,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 6px 4px 12px 4px;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
 }
 
 .sello-autenticidad {
@@ -94,7 +103,8 @@ body {
 
 .autor-header {
   color: var(--texto-secundario);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .tarjeta-principal {
@@ -136,15 +146,21 @@ body {
 
 .encabezado-titulo h1 {
   margin: 0;
-  font-size: 1.55rem;
-  line-height: 1.2;
-  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: #ffffff;
 }
 
 .nombre-cientifico {
   margin: 6px 0 0 0;
-  font-size: 0.98rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.08rem;
   font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.2px;
   color: var(--verde-acento);
 }
 
@@ -161,12 +177,13 @@ body {
   border: 1.5px solid rgba(108, 168, 124, 0.55);
   color: var(--texto-principal);
   border-radius: 50px;
-  padding: 8px 10px; 
+  padding: 8px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   cursor: pointer;
+  font-family: var(--fuente-cuerpo);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease;
 }
@@ -255,26 +272,31 @@ body {
 .etiqueta-mini {
   display: block;
   font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
   color: var(--texto-secundario);
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .item-ubicacion strong {
-  font-size: 0.86rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--texto-principal);
 }
 
 .seccion-exif, .seccion-descripcion {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 .titulo-seccion {
-  font-size: 0.76rem;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.78rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--texto-secundario);
-  margin: 0 0 10px 0;
+  letter-spacing: 1.1px;
+  color: var(--verde-acento);
+  margin: 0 0 12px 0;
 }
 
 .grilla-exif {
@@ -293,28 +315,33 @@ body {
 
 .caja-exif span {
   display: block;
-  font-size: 0.66rem;
+  font-size: 0.68rem;
+  font-weight: 500;
   color: var(--texto-secundario);
   margin-bottom: 4px;
 }
 
 .caja-exif strong {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
+  font-weight: 700;
   color: #fff;
 }
 
 .equipo-info {
-  margin-top: 8px;
-  font-size: 0.76rem;
-  color: var(--texto-secundario);
-  text-align: right;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 0.2px;
 }
 
 .parrafo-historia {
   margin: 0;
-  font-size: 0.94rem;
-  line-height: 1.65;
-  color: #d7e0d9;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #dce5de;
   background: var(--bg-caja);
   padding: 16px;
   border-radius: 12px;
@@ -332,12 +359,12 @@ body {
 
 .firma-autor p {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
 }
 
 .firma-autor small {
   color: var(--texto-secundario);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
 }
 
 .btn-instagram, .btn-primario {
@@ -350,7 +377,8 @@ body {
   text-decoration: none;
   padding: 13px;
   border-radius: 12px;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
+  letter-spacing: 0.2px;
 }
 
 @media (max-width: 420px) {

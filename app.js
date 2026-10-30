@@ -56,7 +56,7 @@
 
         ctx.drawImage(img, 0, 0);
         const fontSize = Math.max(16, Math.round(canvas.width * 0.018));
-        ctx.font = `600 ${fontSize}px system-ui, sans-serif`;
+        ctx.font = `600 ${fontSize}px "Plus Jakarta Sans", system-ui, sans-serif`;
         const textoMarca = "© @javixcortesph_";
         const padding = Math.round(fontSize * 0.8);
 
@@ -80,7 +80,7 @@
       };
 
       img.onerror = function () {
-        reject(new Error("No se pudo cargar la imagen: " + urlImagen));
+        reject(new Error("No se pudo cargar la imagen."));
       };
 
       img.src = urlImagen;
@@ -95,7 +95,6 @@
     const iconoAudio = document.getElementById("icono-audio");
     const estadoAudio = document.getElementById("estado-audio");
     const ondas = document.getElementById("ondas-audio");
-
     const SVG_PLAY = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-left:2px;"><path d="M8 5v14l11-7z"/></svg>';
     const SVG_PAUSE = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
 
@@ -139,7 +138,7 @@
   fetch(`datos/${idLimpio}.json`, { cache: "no-store" })
     .then((respuesta) => {
       if (!respuesta.ok) {
-        throw new Error("Ficha JSON no encontrada: " + idLimpio);
+        throw new Error("Ficha no encontrada");
       }
       return respuesta.json();
     })
@@ -179,13 +178,12 @@
         txtCientifico.classList.add("oculto");
         document.getElementById("bloque-audio").classList.add("oculto");
       }
-
+      
       await renderizarFotoProtegida(ficha.imagen);
       vistaCarga.classList.add("oculto");
       vistaFicha.classList.remove("oculto");
     })
-    .catch((err) => {
-      console.error("[Diagnóstico Ficha]:", err.message);
+    .catch(() => {
       mostrarBloqueo();
     });
 })();
