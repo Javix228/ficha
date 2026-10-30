@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Sierra nevada",
+  "imagen": "fotos/paisaje_sierra_nevada_3.jpg",
+  "lugar": "Parque nacional Conguillío, sendero pastos blancos",
+  "fecha": "16/02/2025",
+  "exif": {
+    "velocidad": "1/250 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 100",
+    "focal": "55 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 18-55mm"
+  },
+  "descripcion": "Ubicado en La Araucanía, dentro del Parque Nacional Conguillío, es un estratovolcán inactivo de 2.554 metros de altitud. Destaca por su caldera colapsada y glaciares orientales, cuyos deshielos alimentan cuerpos de agua como la Laguna Espejo. Rodeado de milenarios bosques de araucarias, es un destino andinista clásico que ofrece vistas espectaculares hacia el vecino volcán Llaima."
+}

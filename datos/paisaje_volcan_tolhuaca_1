@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Volcán Tolhuaca",
+  "imagen": "fotos/paisaje_volcan_tolhuaca_1.jpg",
+  "lugar": "Cumbre volcán lonquimay 2865msnm",
+  "fecha": "28/12/2025",
+  "exif": {
+    "velocidad": "1/200 s",
+    "apertura": "f/8.0",
+    "iso": "ISO 100",
+    "focal": "46 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 18-55mm"
+  },
+  "descripcion": "Ubicado en La Araucanía, este estratovolcán de 2.806 metros contrasta con el vecino Lonquimay por su mayor antigüedad y profunda erosión glaciar. Destaca por su cráter cubierto de hielo y fuerte actividad geotérmica. Curiosamente, aunque no registra erupciones históricas, su sistema magmático subyacente alimenta reconocidos centros termales y géiseres en sus faldas occidentales."
+}

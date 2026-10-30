@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Salto Punta negra",
+  "imagen": "fotos/paisaje_salto_punta_negra_1.jpg",
+  "lugar": "Sierra nevada, sendero hacia laguna espejo",
+  "fecha": "10/02/2024",
+  "exif": {
+    "velocidad": "1/800 s",
+    "apertura": "f/4.8",
+    "iso": "ISO 200",
+    "focal": "100 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Ubicado en La Araucanía, en la ruta hacia la Laguna Espejo, es una imponente cascada formada por el estero Punta Negra. Se alimenta directamente de los deshielos del glaciar oriental del volcán Sierra Nevada. Curiosamente, marca el inicio del ascenso más exigente del trekking y su caudal alcanza su máximo esplendor tras las lluvias."
+}

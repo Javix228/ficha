@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Volcán Lonquimay",
+  "imagen": "fotos/paisaje_volcan_lonquimay_1.jpg",
+  "lugar": "Alto centinela, Malalcahuello",
+  "fecha": "12/05/2025",
+  "exif": {
+    "velocidad": "1/200 s",
+    "apertura": "f/4.5",
+    "iso": "ISO 200",
+    "focal": "70 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Ubicado en la Región de La Araucanía, dentro de la Reserva Nacional Malalcahuello, este estratovolcán alcanza los 2.865 metros de altitud. Destaca por su erupción iniciada en diciembre de 1989, la cual originó un cráter parásito bautizado oficialmente como 'Navidad'. Su entorno de milenarias araucarias y extensos escoriales volcánicos lo convierte en un destino icónico del montañismo."
+}
