@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Araucarias Milenarias",
+  "imagen": "fotos/paisaje_araucaria_3.jpg",
+  "lugar": "Parque nacional Conguillío, Curacautín",
+  "fecha": "29/01/2022",
+  "exif": {
+    "velocidad": "1/200 s",
+    "apertura": "f/10.0",
+    "iso": "ISO 200",
+    "focal": "78 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "El parque nacional Conguillío, ubicado en la Región de La Araucanía, destaca por sus milenarios bosques de araucarias, lagos cordilleranos y el imponente volcán Llaima. Sus paisajes de escoriales volcánicos y lagunas cristalinas, como la Arcoíris, sirvieron de escenario para el documental 'Caminando con Dinosaurios'. Es un ecosistema único que evidencia el intenso vulcanismo de los Andes."
+}

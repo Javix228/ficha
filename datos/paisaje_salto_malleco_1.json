@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Salto Malleco",
+  "imagen": "fotos/paisaje_salto_malleco_1.jpg",
+  "lugar": "Mirador salto malleco, Curacautín",
+  "fecha": "15/11/2025",
+  "exif": {
+    "velocidad": "1/500 s",
+    "apertura": "f/3.8",
+    "iso": "ISO 200",
+    "focal": "20 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 18-55mm"
+  },
+  "descripcion": "Ubicado en el Parque Nacional Tolhuaca, en La Araucanía, esta cascada de 49 metros de altura constituye el desagüe natural de la laguna Malleco. El salto cae espectacularmente erosionando un imponente cuerpo de lavas columnares. Destaca por su enorme valor geológico dentro del Geoparque Kütralkura y está rodeado por un frondoso bosque andino patagónico."
+}

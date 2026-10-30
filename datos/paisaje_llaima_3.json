@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Volcán Llaima y Cóndor Andino",
+  "imagen": "fotos/paisaje_llaima_3.jpg",
+  "lugar": "Volcán Lonquimay, ascenso cumbre",
+  "fecha": "28/12/2025",
+  "exif": {
+    "velocidad": "1/1000 s",
+    "apertura": "f/4.8",
+    "iso": "ISO 400",
+    "focal": "140 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Ubicado en La Araucanía, dentro del Parque Nacional Conguillío, es uno de los estratovolcanes más grandes y activos de Chile. Destaca por sus dos cumbres y extensos escoriales de lava. Curiosamente, su nombre provendría del mapudungun y significa 'venas de sangre' o 'desaguadero', en clara referencia a los fluidos ríos de magma de sus frecuentes erupciones."
+}

@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Laguna Espejo",
+  "imagen": "fotos/paisaje_laguna_espejo_1.jpg",
+  "lugar": "Laguna espejo, Sierra nevada, Curacautín.",
+  "fecha": "10/02/2024",
+  "exif": {
+    "velocidad": "1/400 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 100",
+    "focal": "20 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 18-55mm"
+  },
+  "descripcion": "Ubicada en La Araucanía, cerca de Curacautín, es un cuerpo de agua turquesa formado a los pies del glaciar oriental de la Sierra Nevada. Está rodeada de rocas volcánicas y bosques nativos. Curiosamente, debe su nombre al espectacular fenómeno visual que genera, ya que sus aguas reflejan con total perfección la cordillera y los hielos eternos."
+} 

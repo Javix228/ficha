@@ -1,0 +1,15 @@
+{
+  "tipo": "paisaje",
+  "titulo": "Volcán Llaima",
+  "imagen": "fotos/paisaje_llaima_1.jpg",
+  "lugar": "Parque nacional Conguillío, sendero pastos blancos",
+  "fecha": "3/02/2024",
+  "exif": {
+    "velocidad": "1/160 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 100",
+    "focal": "55 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 18-55mm"
+  },
+  "descripcion": "Ubicado en La Araucanía, dentro del Parque Nacional Conguillío, es uno de los estratovolcanes más grandes y activos de Chile. Destaca por sus dos cumbres y extensos escoriales de lava. Curiosamente, su nombre provendría del mapudungun y significa 'venas de sangre' o 'desaguadero', en clara referencia a los fluidos ríos de magma de sus frecuentes erupciones."
+}
