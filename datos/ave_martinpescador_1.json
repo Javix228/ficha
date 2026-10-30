@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Martín Pescador",
+  "nombre_cientifico": "Ceryle torquata",
+  "imagen": "fotos/ave_martinpescador_1.jpg",
+  "audio": "audios/ave_martinpescador_1.mp3",
+  "lugar": "Lago Traful, Argentina.",
+  "fecha": "22/01/2024",
+  "exif": {
+    "velocidad": "1/2000 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 800",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm ED"
+  },
+  "descripcion": "Ave robusta de gran pico negro. Presenta plumaje gris azulado con cresta desordenada y pecho rojizo. Habita en ríos, lagos y estuarios desde Norteamérica hasta Tierra del Fuego. Dato curioso: tras zambullirse en picada para capturar un pez, lo golpea repetidamente contra una rama antes de tragarlo entero comenzando por la cabeza."
+}
