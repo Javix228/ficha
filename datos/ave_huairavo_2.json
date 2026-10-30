@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Huairavo",
+  "nombre_cientifico": "Nycticorax nycticorax",
+  "imagen": "fotos/ave_huairavo_2.jpg",
+  "audio": "audios/ave_huairavo_2.mp3",
+  "lugar": "Río Laja, Región del Biobío",
+  "fecha": "14/01/2023",
+  "exif": {
+    "velocidad": "1/800 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Garza robusta y de cuello corto. El adulto posee plumaje gris y negro, ojos rojos y largas plumas nucales blancas. Habita humedales, ríos y estuarios. Dato curioso: es de hábitos nocturnos y crepusculares; su fuerte llamado en vuelo se asemeja a un ladrido ronco o graznido, lo que le ha valido su místico apodo de 'garza bruja'."
+}

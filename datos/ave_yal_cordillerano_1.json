@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Yal Cordillerano",
+  "nombre_cientifico": "Melanodera xanthogramma",
+  "imagen": "fotos/ave_yal_cordillerano_1.jpg",
+  "audio": "audios/ave_yal_cordillerano_1.mp3",
+  "lugar": "Malalcahuello, Curacautín.",
+  "fecha": "11/08/2026",
+  "exif": {
+    "velocidad": "1/4000 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 800",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "El macho es verde oliva con garganta negra, cejas y bigotes amarillos; la hembra es parda y estriada. Habita praderas altoandinas y laderas rocosas de Chile y Argentina. Dato curioso: su plumaje amarillo y verdoso le otorga un camuflaje perfecto entre los pastos cordilleranos (coirones), haciéndolo muy difícil de detectar hasta que alza el vuelo."
+}

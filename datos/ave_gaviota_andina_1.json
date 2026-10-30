@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Gaviota Andina",
+  "nombre_cientifico": "Chroicocephalus serranus",
+  "imagen": "fotos/ave_gaviota_andina_1.jpg",
+  "audio": "audios/ave_gaviota_andina_1.mp3",
+  "lugar": "Lago Conguillío, Parque nacional Conguillío",
+  "fecha": "29/01/2022",
+  "exif": {
+    "velocidad": "1/1250 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Ave blanca y gris que en época reproductiva desarrolla una llamativa capucha negra. Posee pico y patas rojizas oscuras. Habita lagos, ríos y bofedales andinos, descendiendo a la costa durante el invierno. Dato curioso: es la única especie de gaviota que anida y se reproduce regularmente en altitudes extremas, superando los 3.000 metros sobre el nivel del mar."
+}

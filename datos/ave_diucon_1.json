@@ -1,0 +1,17 @@
+{
+  "tipo": "ave",
+  "titulo": "Diucón o Urco",
+  "nombre_cientifico": "Xolmis pyrope",
+  "imagen": "fotos/ave_diucon_1.jpg",
+  "audio": "audios/ave_diucon_1.mp3",
+  "lugar": "Muelle de las Almas, Chiloé",
+  "fecha": "8/04/2022",
+  "exif": {
+    "velocidad": "1/1000 s",
+    "apertura": "f/6.3",
+    "iso": "ISO 400",
+    "focal": "300 mm",
+    "equipo": "Nikon D3500 • Nikkor DX 70-300mm"
+  },
+  "descripcion": "Ave de plumaje gris ceniza y vientre más claro, inconfundible por sus llamativos ojos de color rojo intenso. Habita en bosques, matorrales y claros del sur de Sudamérica. Dato curioso: suele posarse en la rama más alta y expuesta de un árbol para vigilar y atrapar insectos al vuelo, regresando casi siempre a la misma percha."
+}
